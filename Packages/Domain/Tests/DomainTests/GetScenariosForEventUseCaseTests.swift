@@ -7,7 +7,10 @@ private struct FakeScenarioRepository: ScenarioRepository {
     let scenarios: [String: Scenario]
 
     func getByEventId(_ eventId: String, stock: StockKey) async throws -> Scenario? {
-        return scenarios[eventId]
+        guard let scenario = scenarios[eventId], scenario.stock == stock else {
+            return nil
+        }
+        return scenario
     }
 }
 
@@ -90,6 +93,16 @@ final class GetScenariosForEventUseCaseTests: XCTestCase {
         let useCase = GetScenariosForEventUseCase(repository: repo)
 
         let result = try await useCase.execute(eventId: "non-existent", stock: .tsla)
+
+        XCTAssertNil(result)
+    }
+
+    func test_이벤트ID가_일치해도_종목이_다르면_nil_반환() async throws {
+        let tslaScenario = makeSampleScenario(eventId: "evt-1", stock: .tsla)
+        let repo = FakeScenarioRepository(scenarios: ["evt-1": tslaScenario])
+        let useCase = GetScenariosForEventUseCase(repository: repo)
+
+        let result = try await useCase.execute(eventId: "evt-1", stock: .pltr)
 
         XCTAssertNil(result)
     }
