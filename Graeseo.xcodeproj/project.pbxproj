@@ -1,0 +1,466 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		10AA4533F446214F23BF705C /* AppConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72EAE15DBC2E0C2584607618 /* AppConfig.swift */; };
+		26F737281B60176D4BD06406 /* GraeseoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C085044F1609B4E0A0344A9E /* GraeseoTests.swift */; };
+		44D10F685D8D10E9154D4D67 /* MainFeedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD8D46728A511E919B01272 /* MainFeedViewModel.swift */; };
+		64CC6207F46C1FB7B7D76502 /* Domain in Frameworks */ = {isa = PBXBuildFile; productRef = 9FA8903B0A37C6504B6E2C66 /* Domain */; };
+		6ECB156913EC23F60BDC5D89 /* GraeseoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B9C7E5FB1E9B7A235474C9 /* GraeseoApp.swift */; };
+		A7B9913D4C1BD6E5B8AD235B /* MainFeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB34F5B9E808C1572E2963C2 /* MainFeedView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3043748D81D658106F8A24B7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 344788F34E8FCD34BB2F5C26 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9DFD8DC14EF1E3810997E411;
+			remoteInfo = Graeseo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0DC32A64E38807A4C3601D89 /* Domain */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Domain; path = Packages/Domain; sourceTree = SOURCE_ROOT; };
+		321F69E16518DBF1FAD4ADFD /* Graeseo.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = Graeseo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5BD8D46728A511E919B01272 /* MainFeedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainFeedViewModel.swift; sourceTree = "<group>"; };
+		72EAE15DBC2E0C2584607618 /* AppConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfig.swift; sourceTree = "<group>"; };
+		93B9C7E5FB1E9B7A235474C9 /* GraeseoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraeseoApp.swift; sourceTree = "<group>"; };
+		B1A9F84F23DB4CF52A0A8537 /* GraeseoTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = GraeseoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C085044F1609B4E0A0344A9E /* GraeseoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraeseoTests.swift; sourceTree = "<group>"; };
+		D950F1B5F03C6ADDA94328B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		DB34F5B9E808C1572E2963C2 /* MainFeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainFeedView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E6578128E710E099E3C74FB3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64CC6207F46C1FB7B7D76502 /* Domain in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		39BC54B0FE7C6558B4C418B3 /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				0DC32A64E38807A4C3601D89 /* Domain */,
+			);
+			path = Packages;
+			sourceTree = "<group>";
+		};
+		5813206E7DB444ECD732E167 /* Feature */ = {
+			isa = PBXGroup;
+			children = (
+				6AE4EE875CB5444DA8026A6F /* MainFeed */,
+			);
+			path = Feature;
+			sourceTree = "<group>";
+		};
+		5A3A209F5F3347272C897A64 = {
+			isa = PBXGroup;
+			children = (
+				814EFFDFE8C905683C7FFD27 /* Graeseo */,
+				5F498E54A494CCDD48460C47 /* GraeseoTests */,
+				39BC54B0FE7C6558B4C418B3 /* Packages */,
+				87F9B3F4AC7DC1015DD40DEF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5F498E54A494CCDD48460C47 /* GraeseoTests */ = {
+			isa = PBXGroup;
+			children = (
+				C085044F1609B4E0A0344A9E /* GraeseoTests.swift */,
+			);
+			path = GraeseoTests;
+			sourceTree = "<group>";
+		};
+		6AE4EE875CB5444DA8026A6F /* MainFeed */ = {
+			isa = PBXGroup;
+			children = (
+				DB34F5B9E808C1572E2963C2 /* MainFeedView.swift */,
+				5BD8D46728A511E919B01272 /* MainFeedViewModel.swift */,
+			);
+			path = MainFeed;
+			sourceTree = "<group>";
+		};
+		814EFFDFE8C905683C7FFD27 /* Graeseo */ = {
+			isa = PBXGroup;
+			children = (
+				D28C2F0CD4110EE7CBC5F008 /* App */,
+				5813206E7DB444ECD732E167 /* Feature */,
+			);
+			path = Graeseo;
+			sourceTree = "<group>";
+		};
+		87F9B3F4AC7DC1015DD40DEF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				321F69E16518DBF1FAD4ADFD /* Graeseo.app */,
+				B1A9F84F23DB4CF52A0A8537 /* GraeseoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D28C2F0CD4110EE7CBC5F008 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				72EAE15DBC2E0C2584607618 /* AppConfig.swift */,
+				93B9C7E5FB1E9B7A235474C9 /* GraeseoApp.swift */,
+				D950F1B5F03C6ADDA94328B9 /* Info.plist */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4385C1B13CAD7F03F30EC9F3 /* GraeseoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 172B5E7D08F1D24BAFB9B9F0 /* Build configuration list for PBXNativeTarget "GraeseoTests" */;
+			buildPhases = (
+				066F48FC58E7AD87A31F6829 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C691456676263BFFA3851AED /* PBXTargetDependency */,
+			);
+			name = GraeseoTests;
+			packageProductDependencies = (
+			);
+			productName = GraeseoTests;
+			productReference = B1A9F84F23DB4CF52A0A8537 /* GraeseoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		9DFD8DC14EF1E3810997E411 /* Graeseo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F91874615BEDFDC908924952 /* Build configuration list for PBXNativeTarget "Graeseo" */;
+			buildPhases = (
+				B9BE4EA1733A74ECB036264B /* Sources */,
+				E6578128E710E099E3C74FB3 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Graeseo;
+			packageProductDependencies = (
+				9FA8903B0A37C6504B6E2C66 /* Domain */,
+			);
+			productName = Graeseo;
+			productReference = 321F69E16518DBF1FAD4ADFD /* Graeseo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		344788F34E8FCD34BB2F5C26 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1600;
+				TargetAttributes = {
+				};
+			};
+			buildConfigurationList = 4A6C9BBCE7EE1139AEBC9D39 /* Build configuration list for PBXProject "Graeseo" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 5A3A209F5F3347272C897A64;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				FC20858596212D92BE35F40E /* XCLocalSwiftPackageReference "Packages/Domain" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 87F9B3F4AC7DC1015DD40DEF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9DFD8DC14EF1E3810997E411 /* Graeseo */,
+				4385C1B13CAD7F03F30EC9F3 /* GraeseoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		066F48FC58E7AD87A31F6829 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				26F737281B60176D4BD06406 /* GraeseoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B9BE4EA1733A74ECB036264B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				10AA4533F446214F23BF705C /* AppConfig.swift in Sources */,
+				6ECB156913EC23F60BDC5D89 /* GraeseoApp.swift in Sources */,
+				A7B9913D4C1BD6E5B8AD235B /* MainFeedView.swift in Sources */,
+				44D10F685D8D10E9154D4D67 /* MainFeedViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C691456676263BFFA3851AED /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9DFD8DC14EF1E3810997E411 /* Graeseo */;
+			targetProxy = 3043748D81D658106F8A24B7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		2225921E5B2B7D6D8D945FAF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FEED_URL = "$(FEED_URL)";
+				INFOPLIST_FILE = Graeseo/App/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.graeseo.app;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				xcconfig = Config/Release.xcconfig;
+			};
+			name = Release;
+		};
+		34B6154064EF354AFA13FBE3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 6.0;
+			};
+			name = Release;
+		};
+		3FC7E53D902303C1EB4DBF89 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FEED_URL = "$(FEED_URL)";
+				INFOPLIST_FILE = Graeseo/App/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.graeseo.app;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				xcconfig = Config/Debug.xcconfig;
+			};
+			name = Debug;
+		};
+		6E480CDAC81B90AC6BD29B94 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.graeseo.GraeseoTests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Graeseo.app/Graeseo";
+			};
+			name = Debug;
+		};
+		869DF4782AF67D6BBE233287 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.graeseo.GraeseoTests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Graeseo.app/Graeseo";
+			};
+			name = Release;
+		};
+		907DA09786D5F6F44742A8A8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 6.0;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		172B5E7D08F1D24BAFB9B9F0 /* Build configuration list for PBXNativeTarget "GraeseoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6E480CDAC81B90AC6BD29B94 /* Debug */,
+				869DF4782AF67D6BBE233287 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		4A6C9BBCE7EE1139AEBC9D39 /* Build configuration list for PBXProject "Graeseo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				907DA09786D5F6F44742A8A8 /* Debug */,
+				34B6154064EF354AFA13FBE3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		F91874615BEDFDC908924952 /* Build configuration list for PBXNativeTarget "Graeseo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3FC7E53D902303C1EB4DBF89 /* Debug */,
+				2225921E5B2B7D6D8D945FAF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		FC20858596212D92BE35F40E /* XCLocalSwiftPackageReference "Packages/Domain" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = Packages/Domain;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		9FA8903B0A37C6504B6E2C66 /* Domain */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Domain;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 344788F34E8FCD34BB2F5C26 /* Project object */;
+}
