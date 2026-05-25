@@ -1,0 +1,4 @@
+// Debug 빌드 기본값 — 실기기 테스트 시 Config/Local.xcconfig에서 재정의
+#include? "Local.xcconfig"
+
+FEED_URL = http://localhost:5173
