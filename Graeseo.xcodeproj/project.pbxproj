@@ -31,8 +31,10 @@
 		5BD8D46728A511E919B01272 /* MainFeedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainFeedViewModel.swift; sourceTree = "<group>"; };
 		72EAE15DBC2E0C2584607618 /* AppConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfig.swift; sourceTree = "<group>"; };
 		93B9C7E5FB1E9B7A235474C9 /* GraeseoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraeseoApp.swift; sourceTree = "<group>"; };
+		A1F6A2E8CD358DF7A66D8DB3 /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
 		B1A9F84F23DB4CF52A0A8537 /* GraeseoTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = GraeseoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C085044F1609B4E0A0344A9E /* GraeseoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraeseoTests.swift; sourceTree = "<group>"; };
+		C80BF42A0624D64705B77120 /* Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
 		D950F1B5F03C6ADDA94328B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		DB34F5B9E808C1572E2963C2 /* MainFeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainFeedView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -68,6 +70,7 @@
 		5A3A209F5F3347272C897A64 = {
 			isa = PBXGroup;
 			children = (
+				AC52DFDA4B1DFAED1F5A9311 /* Config */,
 				814EFFDFE8C905683C7FFD27 /* Graeseo */,
 				5F498E54A494CCDD48460C47 /* GraeseoTests */,
 				39BC54B0FE7C6558B4C418B3 /* Packages */,
@@ -108,6 +111,15 @@
 				B1A9F84F23DB4CF52A0A8537 /* GraeseoTests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		AC52DFDA4B1DFAED1F5A9311 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				C80BF42A0624D64705B77120 /* Debug.xcconfig */,
+				A1F6A2E8CD358DF7A66D8DB3 /* Release.xcconfig */,
+			);
+			path = Config;
 			sourceTree = "<group>";
 		};
 		D28C2F0CD4110EE7CBC5F008 /* App */ = {
@@ -227,10 +239,10 @@
 /* Begin XCBuildConfiguration section */
 		2225921E5B2B7D6D8D945FAF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A1F6A2E8CD358DF7A66D8DB3 /* Release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				FEED_URL = "$(FEED_URL)";
 				INFOPLIST_FILE = Graeseo/App/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -239,7 +251,6 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.graeseo.app;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				xcconfig = Config/Release.xcconfig;
 			};
 			name = Release;
 		};
@@ -303,10 +314,10 @@
 		};
 		3FC7E53D902303C1EB4DBF89 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C80BF42A0624D64705B77120 /* Debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				FEED_URL = "$(FEED_URL)";
 				INFOPLIST_FILE = Graeseo/App/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -315,7 +326,6 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.graeseo.app;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				xcconfig = Config/Debug.xcconfig;
 			};
 			name = Debug;
 		};

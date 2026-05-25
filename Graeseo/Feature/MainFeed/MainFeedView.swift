@@ -57,5 +57,9 @@ private struct WebView: UIViewRepresentable {
         func webView(_ webView: WKWebView, didFail navigation: WKNavigation!, withError error: Error) {
             isLoading = false
         }
+
+        func webView(_ webView: WKWebView, didFailProvisionalNavigation navigation: WKNavigation!, withError error: Error) {
+            isLoading = false
+        }
     }
 }

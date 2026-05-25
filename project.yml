@@ -21,16 +21,13 @@ targets:
     platform: iOS
     sources:
       - Graeseo
+    configFiles:
+      Debug: Config/Debug.xcconfig
+      Release: Config/Release.xcconfig
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.graeseo.app
         INFOPLIST_FILE: Graeseo/App/Info.plist
-        FEED_URL: $(FEED_URL)
-      configs:
-        Debug:
-          xcconfig: Config/Debug.xcconfig
-        Release:
-          xcconfig: Config/Release.xcconfig
     dependencies:
       - package: Domain
     scheme:
